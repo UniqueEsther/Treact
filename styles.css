@@ -11,12 +11,6 @@ ul {
     text-decoration: none;
 }
 
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
 .row {
     width: 100%;
     max-width: 1200px;
@@ -27,11 +21,7 @@ nav {
     width: 160px;
 }
 
-.nav__link {
-    margin-left: 16px;
+.nav__links {
     text-decoration: none;
-    font-size: 20px;
-    color: #7342d5;
-    font-weight: bold;
-    padding: 8px;
+    display: flex;
 }
