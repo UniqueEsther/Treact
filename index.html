@@ -3,7 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap">
+    <link rel="icon" href="https://treact.owaiskhan.me/favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#000000">
+    <link rel="apple-touch-icon" href="https://treact.owaiskhan.me/logo192.png">
+    <link rel="manifest" href="https://treact.owaiskhan.me/manifest.json">
     <title>My Free Modern React Template</title>
     <script
       src="https://kit.fontawesome.com/f3a18f9187.js"
@@ -13,27 +18,56 @@
   </head>
   <body>
     <section id="navigation">
-        <div>
+      <div class="section__container">
       <nav class="row">
-        <div id="nav__container">
-          <img class="logo" src="/asset/logo1.svg" alt="company logo" />
+        <div class="nav__container">
+          <a class="logo__link--container" href="https://treact.owaiskhan.me">
+          <img class="logo" src="https://treact.owaiskhan.me/static/media/logo.2c489fc453a1783cbadacf914efa3df6.svg" alt="company logo" />
+          Treact
+          </a>
           <ul class="nav__links">
-            <li><a href="#"class="nav__link">About</a></li>
-            <li><a href="#"class="nav__link">Blog</a></li>
-            <li><a href="#"class="nav__link">Pricing</a></li>
-            <li><a href="#"class="nav__link">Contact Us</a></li>
-            <li><a href="#"class="nav__link">Login</a></li>
-            <li><a href="#"class="nav__link--blue">Sign Up</a></li>
+            <li>
+              <a href="#"class="
+              nav__link
+              nav__link--hover">About</a>
+            </li>
+            <li>
+              <a href="#"class="
+              nav__link
+              nav__link--hover">Blog</a>
+            </li>
+            <li>
+              <a href="#"class="
+              nav__link
+              nav__link--hover">Pricing</a>
+            </li>
+            <li>
+              <a href="#"class="
+              nav__link
+              nav__link--hover">Contact Us</a>
+            </li>
+            <li>
+              <a href="#"class="
+              nav__link
+              nav__link--hover">Login</a>
+            </li>
+            <li>
+              <a href="#"class="
+              nav__link
+              nav__link--hover
+              nav__link--blue">Sign Up</a>
+            </li>
           </ul>
         </div>
       </nav>
-    </div>
       <header>
         <div class="header__container">
+          <div class="two__column">
+            <div class="left__column">
           <h1>
             Beautiful React Templates <span class="blue__text">for you.</span>
           </h1>
-          <p>
+          <p class="header__paragraph">
             Our templates are easy to setup, understand and customize. Fully
             modular components with a variety of pages and components.
           </p>
@@ -41,8 +75,15 @@
             <input type="email" placeholder="Your E-mail Address" />
             <button class="header__button">Get Started</button>
           </form>
-          <img src="/asset/customers-logos.png" alt="" />
+          <div>
+            <p class="Trusted__customers--para">OUR TRUSTED CUSTOMERS</p>
+          <img class="customers__logos" src="/asset/customers-logos.png" alt="" />
+        </div>
+        </div>
+        <div class="right__column">
           <img src="/asset/header image 1.svg" alt="" />
+        </div>
+        </div>
         </div>
       </header>
     </section>
