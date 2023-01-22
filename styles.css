@@ -21,6 +21,10 @@ h2, h3, h4, h5, h6 {
     line-height: 1.25;
 }
 
+h2 {
+    width: 100%;
+}
+
 p {
     line-height: 1.5;
     font-size: 16px;
@@ -121,6 +125,10 @@ nav {
     margin: 0 12px 0 0;
 }
 
+/*
+HEADER
+*/
+
 .header__container {
     padding: 96px 0px;
 }
@@ -173,8 +181,9 @@ input {
 
 }
 .Trusted__customers--para {
-    color: a0aec0;
+    color: #a0aec0;
     font-size: 12px;
+    font-weight: 700;
     position: relative;
     margin: 0 auto;
     max-width: 500px;
@@ -182,7 +191,10 @@ input {
 
 .customers__logos {
     max-width: 500px;
-    margin: 80px 0 0;
+    height: auto;
+    padding: 0px 128px 0px 0px;
+    margin: 16px 0px 0px;
+    width: 100%;
 }
 
 .left__column {
@@ -203,4 +215,38 @@ input {
     flex: 1;
     flex-direction: column;
     justify-content: center;
+}
+
+/*
+
+FEATURES
+
+*/
+
+.features__section--container {
+    position: relative;
+}
+
+.section__span--text {
+    width: 100%;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 1.25px;
+    text-align: center;
+}
+
+.features__container {
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.features__heading {
+    color: #243e63;
+    font-size: 48px;
+    margin-bottom: 16px;
+    text-align: center;
+    font-weight:900;
+    letter-spacing: 1.5;
 }
