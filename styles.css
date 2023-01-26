@@ -415,8 +415,8 @@ h2 {
 
 p {
     display: block;
-    margin-block-start: 16px;
-    margin-block-end: 16px;
+    margin-block-start: 8px;
+    margin-block-end: 8px;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
 }
@@ -459,6 +459,11 @@ button, input, optgroup, select, textarea {
     color: inherit;
     margin: 0px;
     padding: 0px;
+}
+
+section {
+    display: block;
+    transform: none;
 }
 
 /*
@@ -577,7 +582,7 @@ HEADER
 
 .header__container {
     position: relative;
-    padding: 88px 0px;
+    padding: 38px 0px;
 }
 
 .header__title {
@@ -663,26 +668,30 @@ input {
     transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
     transition-duration: 300ms;
 }
-.Trusted__customers--para {
-    color: #a0aec0;
+.Trusted__customers--section {
     font-size: 12px;
     font-weight: 700;
     position: relative;
-    margin: 0 auto;
+    margin-top: 56px;
     max-width: 500px;
+    text-transform: uppercase;
+    letter-spacing: 1;
+    --tw-text-opacity: 1;
+    color: rgb(160 174 192 / var(--tw-text-opacity));
 }
 
 .customers__logos {
     max-width: 500px;
     height: auto;
-    padding: 0px 128px 0px 0px;
-    margin: 16px 0px 0px;
+    padding-right: 128px;
+    margin-top: 16px;
     width: 100%;
+    opacity: 0.5;
 }
 
 .left__column {
     position: relative;
-    width: 42%;
+    width: 42vw;
     max-width: none;
     height: 100%;
     text-align: left;
@@ -698,6 +707,19 @@ input {
     flex: 1;
     flex-direction: column;
     justify-content: center;
+}
+
+.background__blob {
+    pointer-events: none;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    z-index: -10;
+    height: 200px;
+    width: 200px;
+    --tw-translate-x: -56.67%;
+    transform: translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+    opacity: 0.05;
 }
 
 /*
