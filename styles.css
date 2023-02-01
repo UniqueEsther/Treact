@@ -561,34 +561,23 @@ QUALITY WORK
     position: relative;
 }
 
-/*.quality__two--column {
+.quality__two--column {
     display: flex;
     max-width: 1280px;
-    flex-direction: column;
+    flex-direction: row;
     -webkit-box-align: center;
     align-items: center;
     -webkit-box-pack: justify;
     justify-content: space-between;
     margin: 2.5px 0px;
     padding: 96px 0px;
-}*/
-
-.quality__two--column {
-    flex-direction: column;
-    -webkit-box-align: center;
-    align-items: center;
-    margin: 0 auto;
-    display: flex;
-    max-width: 1280px;
 }
 
-
 .quality__left--column {
-    width: 50vw;
-    position: relative;
-    flex-shrink: 0;
+    margin-right: 64px;
     margin-left: 0px;
-    margin-right: 0px;
+    margin-top: 0px;
+    width: 50%;
     max-width: none;
 }
 
@@ -615,10 +604,12 @@ QUALITY WORK
 }
 
 .quality__right--column {
-    margin-right: 64px;
-    margin-top: 0px;
     width: 50vw;
-   max-width: none;
+    position: relative;
+    flex-shrink: 0;
+    margin-left: 0px;
+    margin-right: 0px;
+    max-width: none;
 }
 
 .quality__contentbutton--column {
@@ -637,7 +628,8 @@ QUALITY WORK
 }
 
 .quality__work--heading {
-    font-size: 48px;
+    width: 100%;
+    font-size: 44px;
     text-align: left;
     margin-top: 16px;
     font-weight: 900;
