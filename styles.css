@@ -166,6 +166,16 @@ li {
   list-style: none;
 }
 
+img, svg, video, canvas, audio, iframe, embed, object {
+    display: block;
+    vertical-align: middle;
+}
+
+svg:not(:root) {
+        overflow-clip-margin: content-box;
+        overflow: hidden;
+}
+
 button,
 input,
 optgroup,
@@ -562,19 +572,19 @@ QUALITY WORK
 }
 
 .quality__two--column {
-    display: flex;
     max-width: 1280px;
+    display: flex;
     flex-direction: row;
     -webkit-box-align: center;
     align-items: center;
     -webkit-box-pack: justify;
     justify-content: space-between;
-    margin: 2.5px 0px;
+    margin: 0 auto;
     padding: 96px 0px;
 }
 
 .quality__left--column {
-    margin-right: 64px;
+    margin-right:64px;
     margin-left: 0px;
     margin-top: 0px;
     width: 50%;
@@ -674,4 +684,66 @@ QUALITY WORK
     --tw-text-opacity: 1;
     color: rgb(237 242 247 / var(--tw-text-opacity));
 }
+
+/*
+
+STEPS
+
+*/
+
+.steps__left--column {
+    width: 50%;
+    position: relative;
+    flex-shrink: 0;
+    margin-left: 0px;
+    margin-right: 0px;
+    max-width: none;
+}
+
+.steps__image {
+    border-radius: 4px;
+}
+
+.steps__dotted--square{
+    height: 160px;
+    width: 160px;
+    left: 50%;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    z-index: -10;
+    --tw-translate-x: -50%;
+    transform: translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+    opacity: 0.15;
+    --tw-translate-y: 50%;
+    fill: currentcolor;
+    --tw-text-opacity: 1;
+    color: rgb(100 21 255 / var(--tw-text-opacity));
+}
+
+.steps__right--column {
+    margin-top: 0px;
+    width: 50%;
+    margin-left: 64px;
+    margin-right: 0px;
+    max-width: none;
+}
+
+.steps__content--box {
+    padding: 32px 0px;
+    text-align: left;
+}
+
+.steps__heading {
+    width: 100%;
+    font-size: 48px;
+    text-align: left;
+    margin-top: 16px;
+    font-weight: 900;
+    line-height: 1.25;
+    letter-spacing: 0.4px;
+}
+
+
+
 
