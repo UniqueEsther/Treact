@@ -804,3 +804,61 @@ STEPS
     --tw-text-opacity: 1;
     color: rgb(113 128 150 / var(--tw-text-opacity));
 }
+
+/*
+
+VALUES
+
+*/
+
+.values__right--column {
+    margin-top: 0px;
+    width: 50%;
+    margin-left: 0px;
+    margin-right: 0px;
+    max-width: none;
+}
+
+.values__text--container {
+    margin-right: 64px;
+    margin-left: 0px;
+    margin-top: 0px;
+    width: 50%;
+    max-width: none;
+}
+
+.values__heading {
+    font-size: 48px;
+    text-align: left;
+    margin-top: 16px;
+    font-weight: 900;
+    line-height: 1.25;
+    letter-spacing: 0.4px;
+}
+.values__para {
+    font-size: 18px;
+    text-align: left;
+    margin-top: 32px;
+    font-weight: 500;
+    line-height: 1.625;
+    --tw-text-opacity: 1;
+    color: rgb(124 139 161 / var(--tw-text-opacity));
+}
+
+.features__and--button {
+    max-width: none;
+    display: flex;
+    flex-direction: row;
+    margin-left: 0px;
+    margin-right: 0px;
+    text-align: left;
+}
+
+.values__first--section {
+    margin-top: 32px;
+    margin-right: 32px;
+    align-items: start;
+    display: flex;
+    align-items: left;
+    -webkit-box-align: center;
+}
