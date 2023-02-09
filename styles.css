@@ -1275,7 +1275,32 @@ PRICE
   background: linear-gradient(115deg, rgb(245, 101, 101) 0%, rgb(254, 178, 178) 100%);
 }
 
+/*
 
+TESTIMONAIL
+
+*/
+
+.testimonial__two--column {
+  display: flex;
+  flex-direction: row;
+  --webkit-box-align: center;
+  align-items: center;
+  --webkit-box-pack: justify;
+  justify-content: space-between;
+}
+
+.testimonial__left--column {
+  width: 50%;
+  position: relative;
+  flex-shrink: 0;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.testimonial__image {
+  
+}
 
 
 
